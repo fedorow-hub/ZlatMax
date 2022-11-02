@@ -1,0 +1,62 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-arrow-down:before {
+  content: "\e900";
+}
+._icon-arrowTop:before {
+  content: "\e901";
+}
+._icon-cart:before {
+  content: "\e902";
+}
+._icon-clock:before {
+  content: "\e903";
+}
+._icon-Compare:before {
+  content: "\e904";
+}
+._icon-favorite:before {
+  content: "\e905";
+}
+._icon-footerLocation:before {
+  content: "\e906";
+}
+._icon-footerPhone:before {
+  content: "\e907";
+}
+._icon-footerPost:before {
+  content: "\e908";
+}
+._icon-heard:before {
+  content: "\e909";
+}
+._icon-logo:before {
+  content: "\e90a";
+}
+._icon-search:before {
+  content: "\e90b";
+}
+._icon-user:before {
+  content: "\e90c";
+}
+._icon-arrow-left:before {
+  content: "\e90d";
+}
+._icon-spoiler-arrow:before {
+  content: "\e90e";
+}
