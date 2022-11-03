@@ -11,7 +11,6 @@
 		opacity: 0;
 		&:checked + .checkbox__label:before {
       border-color: $mainOrange;
-
 		}
 		&:checked + .checkbox__label:after {
       transform: scale(1);
@@ -38,8 +37,8 @@
       transform: scale(0);
       transition: transform .3s ease;
       position: absolute;
-      width: rem(16);
-			height: rem(16);
+      width: rem(15);
+			height: rem(15);
       border-radius: 2px;
       top: 2px;
       left: 2px;

@@ -27,7 +27,7 @@
       </div>
      <div class="product">
        <div class="product__container">
-         <div class="product__main main-product">
+         <section class="product__main main-product">
            <div class="main-product__images images-product">
             <div class="images-product__slider swiper">
               <div class="images-product__wrapper swiper-wrapper">
@@ -96,9 +96,9 @@
               <div class="table-product__value">WUESTHOF (Германия)</div>
               <div class="table-product__label">Серия:</div>
               <div class="table-product__value">Ножи серии Classic Ikon</div>
-              <div class="table-product__label">Бонусные баллы: :</div>
+              <div class="table-product__label">Бонусные баллы:</div>
               <div class="table-product__value">38</div>
-            </div>
+            </div>                                  
             <div class="body-product__options options-product">
               <div class="options-product__label">Сталь</div>
               <div class="options-product__value">
@@ -109,9 +109,42 @@
                   <option value="4">Пункт №4</option>
                 </select>
               </div>
-            </div>
+              <div class="options-product__label">Рукоять</div>
+              <div class="options-product__value">
+                <select name="form[]" class="form">
+                  <option value="1" selected>Пункт №1</option>
+                  <option value="2">Пункт №2</option>
+                  <option value="3">Пункт №3</option>
+                  <option value="4">Пункт №4</option>
+                </select>
+              </div>
+              <div class="options-product__label">Гарда и тыльник</div>
+              <div class="options-product__value">
+                <select name="form[]" class="form">
+                  <option value="1" selected>Пункт №1</option>
+                  <option value="2">Пункт №2</option>
+                  <option value="3">Пункт №3</option>
+                  <option value="4">Пункт №4</option>
+                </select>
+              </div>
+              <div class="options-product__label">Обработка клинка</div>
+              <div class="options-product__value">
+                <select name="form[]" class="form">
+                  <option value="1" selected>Пункт №1</option>
+                  <option value="2">Пункт №2</option>
+                  <option value="3">Пункт №3</option>
+                  <option value="4">Пункт №4</option>
+                </select>
+              </div>
+            </div>            
             <div class="body-product__actions actions-product">
-              <div class="actions-product__price">3 865</div>
+              <div class="actions-product__body">
+                <div class="actions-product__price">3 865</div>
+                <div class="actions-product__bonus">+ 449 баллов за покупку<button class="actions-product__tip" data-tippy-content="Вам будут начислены баллы в размере 5% 
+                  от стоимости покупки. Их можно будет использовать 
+                  на оплату последующих заказов.">?</button></div>
+              </div>
+              
               <div class="actions-product__row">
                 <div class="actions-product__quantity quantity">
                   <button type="button" class="quantity__button quantity__button_plus"></button>
@@ -127,25 +160,159 @@
               </div>
             </div>
            </div>
-         </div>
-          <div data-tabs="992" class="product__info product-info">
+         </section>
+          <section data-tabs="992" class="product__info product-info">
             <nav data-tabs-titles class="product-info__navigation">
-              <button type="button" class="product-info__title _tab-active">Таб №1</button>
-              <button type="button" class="product-info__title">Таб №2</button>
-              <button type="button" class="product-info__title">Таб №3</button>
+              <button type="button" class="product-info__title _tab-active">Описание</button>
+              <button type="button" class="product-info__title">Характеристика</button>
+              <button type="button" class="product-info__title">Отзывы</button>
+              <button type="button" class="product-info__title">Доставка</button>
             </nav>
             <div data-tabs-body class="product-info__content">
               <div class="product-info__body">
-                Содержимое первого таба
+                <div class="product-info__desc">Легкий удобный <b>нож с клинком</b>, имеющим пологие вогнутые линзовидные спуски <b>на две трети ширины клинка</b>, образующие тонкое, 
+прекрасно режущее лезвие толщиной <b>около 0,6 мм</b> в районе подводов.</div> 
+
+<div class="product-info__desc"><b>Обух клинка со спинкой рукояти</b> имеет одну плавную дугообразную линию. На пяте перед рукоятью есть подпальцевый <b>вырез для точных работ</b>.</div> 
+
+<div class="product-info__desc">Необходимо проявлять некоторую осторожность при работе с большими боковыми нагрузками <b>на лезвие ножа</b>, ввиду небольшой толщины клинка 
+в рабочей части.</div> 
+
+<div class="product-info__desc">Монтаж рукояти накладной <b>плашечный</b>. На навершии рукояти, функцию которого выполняет выступающий из под плашек хвостовик, 
+имеется <b>отверстие под темляк</b>. Этот нож удобный помощник при работе <b>с продуктами и охоте на боровую и водоплавающую дичь</b>.</div>
               </div>
               <div class="product-info__body">
-                Содержимое второго таба
+                <div class="product-info__wrap">
+                  <div class="product-info__item">
+                    <h3 class="product-info__subTitle">Технические характеристики</h3>
+                    <div class="product-info__characteristic">
+                      <div class="product-info__key">Общая длина, мм</div>
+                      <div class="product-info__value">227</div>
+                    </div>
+                    <div class="product-info__characteristic">
+                      <div class="product-info__key">Длина клинка, мм</div>
+                      <div class="product-info__value">112</div>
+                    </div>
+                    <div class="product-info__characteristic">
+                      <div class="product-info__key">Ширина клинка, мм</div>
+                      <div class="product-info__value">24</div>
+                    </div>
+                    <div class="product-info__characteristic">
+                      <div class="product-info__key">Толщина обуха, мм</div>
+                      <div class="product-info__value">112</div>
+                    </div>
+                  </div>
+                  <div class="product-info__item">
+                    <h3 class="product-info__subTitle">Используемые материалы</h3>
+                    <div class="product-info__characteristic">
+                      <div class="product-info__key">Сталь:</div>
+                      <div class="product-info__value">95Х18</div>
+                    </div>
+                    <div class="product-info__characteristic">
+                      <div class="product-info__key">Рукоять:</div>
+                      <div class="product-info__value">Накладки карельской березы</div>
+                    </div>                    
+                  </div>
+                  <div class="product-info__item">
+                    <h3 class="product-info__subTitle">Производство</h3>
+                    <div class="product-info__characteristic">
+                      <div class="product-info__key">Производство:</div>
+                      <div class="product-info__value">АиР</div>
+                    </div>                                      
+                  </div>                  
+                </div>                
               </div>
               <div class="product-info__body">
-                Содержимое третьего таба
+                <div class="review-product">
+                  <img src="@img/product/Ellipse 36.jpg" class="review-product__image" alt="Картинка"/>
+                  <div class="review-product__content">
+                    <div class="review-product__header">
+                      <h3 class="review-product__title">Никита Панков</h3>
+                      <div class="review-product__date">29.10.2022</div>
+                    </div>
+                    <div class="review-product__rating">
+                      <img src="@img/Star 7.svg"/>
+                      <img src="@img/Star 7.svg"/>
+                      <img src="@img/Star 7.svg"/>                        
+                      <img src="@img/Star 7.svg"/>
+                      <img src="@img/Star 7.svg"/>
+                    </div>
+                    <div class="review-product__text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, nisi deserunt soluta voluptate voluptatibus fugiat magnam dolorem sequi esse? Laudantium nostrum in tempora repellat possimus nisi exercitationem error nam voluptatum.
+                    </div>
+                    <div class="review-product__action">
+                      <button class="review-product__button">Ответить</button>
+                      <a href="#" class="review-product__like _icon-heard"></a>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="review-product">
+                  <img src="@img/product/Ellipse 37.jpg" class="review-product__image" alt="Картинка"/>
+                  <div class="review-product__content">
+                    <div class="review-product__header">
+                      <h3 class="review-product__title">Саша Осейчук</h3>
+                      <div class="review-product__date">29.10.2022</div>
+                    </div>
+                    <div class="review-product__rating">
+                      <img src="@img/Star 7.svg"/>
+                      <img src="@img/Star 7.svg"/>
+                      <img src="@img/Star 7.svg"/>                        
+                      <img src="@img/Star 7.svg"/>
+                      <img src="@img/Star 7.svg"/>
+                    </div>
+                    <div class="review-product__text">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, nisi deserunt soluta voluptate voluptatibus fugiat magnam dolorem sequi esse? Laudantium nostrum in tempora repellat possimus nisi exercitationem error nam voluptatum.
+                    </div>
+                    <div class="review-product__action">
+                      <button class="review-product__button">Ответить</button>
+                      <a href="#" class="review-product__like _icon-heard"></a>
+                    </div>
+                  </div>
+                </div>                
+              </div>
+              <div class="product-info__body">
+                <div class="product-info__delivery delivery-product">
+                  <div class="delivery-product__item">
+                    <div class="delivery-product__label">Ваша страна</div>
+                    <div class="delivery-product__value">
+                      <select name="form[]" class="form">
+                        <option value="1" selected>Россия</option>
+                        <option value="2">Казахстан</option>
+                        <option value="3">Украина</option>
+                        <option value="4">Белорусия</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="delivery-product__item">
+                    <div class="delivery-product__label">Ваш город</div>
+                    <div class="delivery-product__value">
+                      <select name="form[]" class="form">
+                        <option value="1" selected>Москва</option>
+                        <option value="2">Астана</option>
+                        <option value="3">Киев</option>
+                        <option value="4">Минск</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                
               </div>
             </div>
-          </div>
+          </section>
+          <section class="page__hits-products hits-products">
+            @@include('html/_products-slider.htm',{
+              "title": "Похожие товары",
+              "moretext": "Перейти в каталог"
+              })
+          </section>
+          <section class="page__hits-products hits-products">
+            @@include('html/_products-slider.htm',{
+              "title": "Рекомендуем",
+              "moretext": "Перейти в каталог"
+              })
+          </section>
        </div>
      </div>
     </main>

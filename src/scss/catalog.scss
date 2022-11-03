@@ -121,6 +121,15 @@
     }
   }
 
+  // .price-filter__wrap
+
+  &__wrap {
+    padding: 0 rem(30) rem(38) rem(30);
+    &_stars{
+      padding: rem(20) rem(30) rem(38) rem(30);
+    }
+  }
+
   // .price-filter__body
 
   &__body {
@@ -129,13 +138,18 @@
 
   // .price-filter__iputs
 
-  &__iputs {
+  &__inputs {
     display: flex;
     border: 1px solid #cbcbcb;
     border-radius: rem(3);
     overflow: hidden;
     &:not(:last-child) {
       margin-bottom: rem(60);
+    }
+    &_no-tooltips {
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+      }
     }
   }
 
