@@ -125,25 +125,19 @@ function initSliders() {
 			observer: true,
 			observeParents: false,
 			slidesPerView: 4,
-			spaceBetween: 30,
-			//autoHeight: true,
+			spaceBetween: 30,			
 			speed: 800,
-
-
 			//touchRatio: 0,
 			//simulateTouch: false,
 			loop: true,
 			//preloadImages: false,
 			//lazy: true,
-
-
 			// Эффекты
 			//effect: 'fade',
       autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-
 
 			// Пагинация
 

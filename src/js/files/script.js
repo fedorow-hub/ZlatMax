@@ -20,10 +20,10 @@ function documentActions(e) {
     const subMenuID = targetElement.dataset.parent ? targetElement.dataset.parent : null;
     const subMenu = document.querySelector(`[data-submenu="${subMenuID}"]`);
     if (subMenu) {
-      const activeLink = document.querySelector('_sub-menu-active');
-      const activeBlock = document.querySelector('_sub-menu-open');
+      const activeLink = document.querySelector('._sub-menu-active');
+      const activeBlock = document.querySelector('._sub-menu-open');
 
-      if(activeLink && activeLink !== targetElement) { //не работает, надо разобраться
+      if(activeLink && activeLink !== targetElement) {
         activeLink.classList.remove('_sub-menu-active');
         activeBlock.classList.remove('_sub-menu-open');
         document.documentElement.classList.remove('sub-menu-open');
