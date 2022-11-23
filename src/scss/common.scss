@@ -410,6 +410,9 @@
     &:not(:last-child) {
       margin-bottom: rem(30);
     }
+    @media (max-width:$mobileSmall){
+       font-size: 10px; 
+    }
   }
 
   // .breadcrumbs__item
@@ -428,6 +431,9 @@
       @extend %ic;
       font-size: rem(15);
       margin: 0 em(15, 15);
+      @media (max-width:$mobileSmall){
+         font-size: 10px; 
+      }
     }
   }
 

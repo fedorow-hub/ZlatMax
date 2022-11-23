@@ -1,8 +1,9 @@
 // <SELECT>
 // Снипет (HTML): sel
-//@import "./../../style.scss";
+
 .select {
 	position: relative;
+	min-width: 220px;
 	// .select__body
 	&__body {
 		position: relative;
@@ -96,11 +97,11 @@
 		// Максимальная высота
 		max-height: 200px;
 		// Стили скроллбара
-		.simplebar-scrollbar {
+		/* .simplebar-scrollbar {
 			&::before {
 				//opacity: 1;
 			}
-		}
+		} */
 	}
 	// .select__option
 	&__option {
@@ -129,27 +130,13 @@
 	&__row {
 		display: inline-flex;
 		align-items: center;
-	}
-	&__asset {
-	}
-	&__text {
-	}
+	}	
 
 	// Состояния селекта
 	&._select-open {
 		z-index: 5;
 	}
-	&._select-disabled {
-	}
-	&._select-active {
-	}
-	&._select-focus {
-	}
-	&._select-multiple {
-	}
-	&._select-checkbox {
-	}
-
+	
   &_control {
     .select__title {
       border: 1px solid rgba(4, 4, 4, .3);
@@ -166,7 +153,7 @@
       }
     }
     .select__option {
-      color: rgba(0, 0, 0, .5);
+      //color: rgba(0, 0, 0, .5);
       @media (any-hover: hover){
         &:hover{
           color: rgba(0, 0, 0, 1);

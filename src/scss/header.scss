@@ -163,16 +163,14 @@
   }
   // .body-header__search
   &__search {
-    flex: 1 1 auto;
-    @include adaptiveValue("padding-left", 158, 20, 1620, 1250, 1);
+    flex: 1 1 auto;    
     @media (min-width:$tablet){
       padding-right: rem(20);
     }
     @media (min-width:$mobileSmall){
-       @include adaptiveValue("padding-left", 158, 20, 1620, 1250, 1);
+      @include adaptiveValue("padding-left", 158, 20, 1620, 1250, 1);
     }
   }
-
 }
 .search-header {
 

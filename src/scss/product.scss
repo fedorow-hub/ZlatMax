@@ -16,7 +16,7 @@
   }
 }
 .main-product {
-  display: grid;
+  display: grid;  
   align-items: start;
 
   // .main-product__images
@@ -24,6 +24,9 @@
   &__images {
     @media (min-width:$tablet){
       padding-right: rem(30);
+    }     
+    @media (max-width:$tablet){
+      min-width: 10px;
     }
   }
   @media (min-width:$tablet){
@@ -120,7 +123,7 @@
     &:not(:last-child) {
       margin-bottom: rem(10);
     }
-    @media (max-width:$mobile){
+    @media (max-width:$mobileSmall){
       flex-wrap: wrap;
 
      }
@@ -163,14 +166,14 @@
   &__value {
     color: rgba(20, 20, 20, .5);
   }
- @media (min-width:$mobile){
+ @media (min-width:$mobileSmall){
   grid-template-columns: rem(200) 1fr;
  }
 }
 .options-product {
   display: grid;
-  @media (min-width:$mobile){
-    grid-template-columns: rem(200) 1fr;
+  @media (min-width:$mobileSmall){
+    grid-template-columns: rem(180) 1fr;
    }
 
   gap: rem(20);
@@ -197,6 +200,9 @@
     align-items: center;
     &:not(:last-child) {
       margin-bottom: em(35, 30);
+    }
+    @media (max-width:$mobileSmall){
+      display: block; 
     }
   }
 
@@ -266,6 +272,7 @@
       display: flex;
       align-items: center;
       flex-direction: row-reverse;
+      justify-content: center;  
       &::before{
         margin-left: rem(20);
       }
@@ -346,7 +353,7 @@
 
   &__wrap {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;    
   }
 
@@ -368,14 +375,23 @@
   }
 
   &__key {
+    @media (max-width:$mobileSmall){
+      font-size: 12px;
+    }
   }
 
   &__value {
+    @media (max-width:$mobileSmall){
+      font-size: 12px;
+    }
   }
 }
 
 .review-product {
   display: flex;
+  @media (max-width:$mobile){
+     display: block; 
+  }
   gap: 30px;
   &:not(:last-child) {
     border-bottom: 1px solid rgba($color: #141414, $alpha: .15);
@@ -443,6 +459,9 @@
 
   &__item {
     display: flex;
+    @media (max-width:$mobileSmall){
+       display: block; 
+    }
     justify-content: space-between;
     align-items: center;
     max-width: 458px;
